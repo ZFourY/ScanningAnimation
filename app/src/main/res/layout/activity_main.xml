@@ -5,37 +5,27 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="horizontal"
-    android:visibility="visible"
+    android:orientation="vertical"
     tools:context="com.zmm.scanninganimation.MainActivity">
 
     <RelativeLayout
-        android:layout_width="430dp"
-        android:layout_height="730dp"
-        android:gravity="center">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
         <ImageView
             android:id="@+id/iv_device_cali_shoes"
-            android:layout_width="291dp"
-            android:layout_height="309dp"
-            android:adjustViewBounds="true"
-            android:baselineAlignBottom="true"
-            android:gravity="center"
-            android:src="@drawable/device_cali_shoes"
-            android:visibility="visible"
-            app:srcCompat="@drawable/device_cali_shoes"
-            tools:visibility="visible" />
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/device_cali_shoes" />
 
         <ImageView
             android:id="@+id/iv_device_cali_scanning"
-            android:layout_width="291dp"
-            android:layout_height="321dp"
-            android:gravity="center"
-            android:src="@drawable/device_cali_scaning"
-            android:visibility="visible"
-            tools:visibility="visible" />
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_alignBaseline="@+id/iv_device_cali_shoes"
+            android:src="@drawable/device_cali_scaning"/>
 
 
     </RelativeLayout>
