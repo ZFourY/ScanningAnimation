@@ -28,5 +28,4 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:25.3.0'
     testImplementation 'junit:junit:4.12'
-    implementation 'com.jakewharton:butterknife:5.1.1'
 }

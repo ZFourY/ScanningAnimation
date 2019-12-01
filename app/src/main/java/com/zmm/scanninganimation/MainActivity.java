@@ -6,16 +6,11 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 
-import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 public class MainActivity extends AppCompatActivity {
 
-    @InjectView(R.id.iv_device_cali_shoes)
     ImageView mIvDeviceCaliShoes;
-    @InjectView(R.id.iv_device_cali_scanning)
     ImageView mIvDeviceCaliScanning;
-
     private Animation mScanningAnimation;
 
 
@@ -23,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.inject(this);
+        mIvDeviceCaliShoes = (ImageView)findViewById(R.id.iv_device_cali_shoes);
+        mIvDeviceCaliScanning = (ImageView)findViewById(R.id.iv_device_cali_scanning);
     }
 
     @Override
